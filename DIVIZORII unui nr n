@@ -1,0 +1,18 @@
+Observații
+1.Numerele care nu sunt pătrate perfecte au număr par de divizori.
+2.Singurele numere cu număr impar de divizori sunt pătratele perfecte.
+3.Cel mai mic divizor propriu al unui număr natural (diferit de 1 și de numărul însuși) este număr prim.
+
+//ineficient
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,d=1;
+    cin>>n;
+    for (d=1;d<=n/2;d++)
+       if (n%d==0)
+       cout<<d<<" ";
+    cout<<n;
+   return 0;
+}
