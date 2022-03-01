@@ -1,0 +1,7 @@
+int grad(int i)
+{
+    int j, s=0;
+    for (j = 1; j <= n; j++)
+    s += a[i][j];
+    return s;
+}
