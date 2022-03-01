@@ -1,0 +1,15 @@
+/* Un graf este complet daca nr. de muchii = n*(n-1)/2
+si gradul unui nod/varf = n-1
+sau pur si simplu daca TOATE elementele de deasupra diag principale a matricei de adiacenta = 1 */
+
+//testam daca "TOATE elem..." = 1
+int ok()
+{
+    int ok1 = 1;
+    for (int i = 1; i < n; i++)
+     for (int j = i + 1; j <= n; j++)
+     if (a[i][j] == 0)
+     ok1 = 0;
+    return ok1;
+}
+
