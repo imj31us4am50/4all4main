@@ -1,0 +1,5 @@
+ // x si y sunt val citite pt noduri
+ while (in >> x >> y)
+    {
+        a[x][y] = a[y][x] = 1;
+    }
